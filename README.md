@@ -62,10 +62,15 @@ We implemented a working prototype to demonstrate real-world use cases:
 ### Installation  
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ai-traffic-violation.git
+git clone https://github.com/your-username/traffichawk-.git
 
 # Move into the project folder
-cd ai-traffic-violation
+cd traffic hawk-
 
 # Install dependencies
 pip install -r requirements.txt
+# Run detection on webcam
+python detect.py --source 0
+
+# Run detection on video file
+python detect.py --source /path/to/video.mp4
