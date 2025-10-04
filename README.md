@@ -45,10 +45,10 @@ Git
 
 Installation
 # Clone the repository
-git clone https://github.com/durgesh-18101/traffichawk.git
+git clone https://github.com/durgesh-18101/traffichawk-.git
 
 # Navigate to project directory
-cd Traffic Hawk
+cd traffic hawk-
 
 # Install dependencies
 pip install -r requirements.txt
