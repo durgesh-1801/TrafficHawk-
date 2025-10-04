@@ -1,50 +1,100 @@
 # TrafficHawk-
 🚦 AI Traffic Violation Detection System
-An intelligent system designed to automatically detect common traffic violations from video feeds. This project was developed as our submission for the Institution's Innovation Council (IIC) 2.0 shortlisting round. Our goal is to enhance road safety and assist traffic management authorities using computer vision.
+
+An intelligent computer vision–based system that automatically detects common traffic violations from video feeds. This project was developed as part of the Institution’s Innovation Council (IIC) 2.0 Shortlisting Round submission by our team.
+Our mission: to enhance road safety and assist traffic management authorities through real-time AI-powered monitoring.
+
 🎯 The Problem
-Manual monitoring of traffic is inefficient, prone to human error, and cannot provide 24/7 coverage. This leads to a high number of un-penalized traffic violations, endangering public safety. Our solution aims to automate this process, making our roads safer and more disciplined.
+
+Manual traffic monitoring is inefficient, error-prone, and cannot provide continuous surveillance. As a result, numerous violations go unnoticed, compromising road discipline and safety.
+Our system addresses this issue by automating traffic violation detection, enabling continuous, accurate, and unbiased monitoring.
+
 ✨ Key Features
-This system can accurately detect several types of traffic violations in real-time:
 
-⛑️ No Helmet Detection: Identifies motorcycle riders who are not wearing a helmet.
+✅ No Helmet Detection – Identifies riders without helmets using YOLOv8-based detection.
+✅ Triple Riding Detection – Detects more than two people on a motorcycle.
+✅ Red Light Jumping – Detects vehicles crossing the stop line when the signal is red.
+✅ Evidence Generation – Captures violation images with timestamps for evidence.
+✅ License Plate Recognition (in progress) – Extracts vehicle numbers for automatic challan generation.
 
-👨‍👨‍👧 Triple Riding Detection: Flags motorcycles carrying more than two people.
-
-🚦 Red Light Jumping: Detects vehicles crossing the stop line when the traffic signal is red.
-
-📸 Evidence Generation: Automatically captures a snapshot of the violation with a timestamp for evidence.
-
-🔢 License Plate Recognition: (In-progress) Extracts the vehicle's license plate number for automated challan (ticket) generation.
 🛠️ Tech Stack & Architecture
-he project is built using a modern stack of computer vision and machine learning technologies.
 
 Programming Language: Python
+Core Libraries: OpenCV, NumPy, TensorFlow / PyTorch
+Detection Model: YOLOv8 (fine-tuned on custom datasets)
+Tracking Algorithm: DeepSORT (for consistent object tracking across frames)
 
-Core Libraries: OpenCV, NumPy, TensorFlow/PyTorch
+⚙️ How It Works
 
-Object Detection Model: We have utilized a pre-trained YOLOv8 (You Only Look Once) model, fine-tuned on custom datasets for high accuracy in detecting vehicles, riders, helmets, and traffic lights.
+Input Source → Live CCTV feed or recorded video.
 
-Tracking Algorithm: DeepSORT is used for tracking objects across frames to identify violations like red light jumping.
+Detection → YOLOv8 identifies vehicles, riders, helmets, and traffic lights.
 
-How It Works
-Video Input: The system takes input from a live CCTV camera feed or a pre-recorded video file.
+Violation Logic → Custom rules determine if a traffic rule has been broken.
 
-Frame Processing: Each frame is passed to the YOLOv8 model for object detection.
+Output → Snapshot, timestamp, and video overlay showing detected violations.
 
-Violation Logic: Custom logic is applied to the detected objects and their positions to identify specific violations (e.g., a person on a motorcycle without a helmet).
-
-Output: When a violation is detected, the system logs the event, saves an image of the infraction, and displays the violation on the output feed.
 🚀 Getting Started
-Follow these instructions to get a copy of the project up and running on your local machine.
-
 Prerequisites
-Python 3.8 or higher
+
+Python 3.8 or above
 
 pip (Python package installer)
 
 Git
-Installation:
-1. Clone the repository:
-   git clone https://github.com/durgesh-1801/traffichawk.git
-2. Navigate to the project directory:
-   cd traffichawk
+
+Installation
+# Clone the repository
+git clone https://github.com/durgesh-18101/traffichawk.git
+
+# Navigate to project directory
+cd Traffic Hawk
+
+# Install dependencies
+pip install -r requirements.txt
+
+Model Setup
+
+Download YOLOv8 weights (or your trained model) and place them inside the /weights directory.
+(Add your download link here)
+
+🖥️ Usage
+
+Run detection on a video file or live webcam feed:
+
+# For webcam
+python detect.py --source 0
+
+# For video file
+python detect.py --source /path/to/video.mp4
+
+
+Detected violations will be displayed live and saved as image evidence in the /output directory.
+
+🖼️ Demo Snapshots
+
+No Helmet Detection
+
+Rider detected without a helmet (flagged with bounding box)
+
+Triple Riding Detection
+
+Motorcycle with three riders detected and logged
+
+(You can add images or GIFs here to show system output)
+
+👥 Team
+
+Suryansh Seth – Project Lead / System Integration
+Durgesh Sharma – Backend developer / AI Developer
+Ujjwal Kansal -  UI/UX Design & Documentation
+
+📜 License
+
+This project is licensed under the MIT License.
+See LICENSE.md
+ for more details.
+
+🙏 Acknowledgments
+
+Special thanks to our mentors and the Institution’s Innovation Council (IIC) for guiding and inspiring us to create an AI-based solution for smarter, safer traffic management.
