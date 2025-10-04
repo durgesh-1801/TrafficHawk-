@@ -86,7 +86,9 @@ Motorcycle with three riders detected and logged
 👥 Team
 
 Suryansh Seth – Project Lead / System Integration
+
 Durgesh Sharma – Backend developer / AI Developer
+
 Ujjwal Kansal -  UI/UX Design & Documentation
 
 📜 License
