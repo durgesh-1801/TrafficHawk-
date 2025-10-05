@@ -59,6 +59,8 @@ We implemented a working prototype to demonstrate real-world use cases:
 - pip  
 - Git  
 
+
+
 ### Installation  
 ```bash
 # Clone the repository
@@ -75,20 +77,36 @@ python detect.py --source 0
 # Run detection on video file
 python detect.py --source /path/to/video.mp4
 
-👥 Team
+---
 
-Durgesh Sharma – Backend / AI Developer
+```
+## 👥 Team
 
-Suryansh Seth – Backend & Team lead
+| Name | Role | Responsibilities |
+|------|------|------------------|
+| **Suryansh Seth** | Project Lead / AI Developer | Model development, integration, and testing |
+| **Durgesh Sharma** | Backend Engineer | API development, backend logic, and deployment |
+| **Ujjwal Kansal** | UI/UX Designer | Interface design, documentation, and visualization |
 
-Ujjwal Kansal – UI/UX & Documentation
+## 📜 License  
+
+This project is licensed under the **MIT License** — you are free to use, modify, and distribute this project with attribution.  
+See the [LICENSE](LICENSE) file for more details.  
+
+**MIT License**
+
+---
+
+## 🙏 Acknowledgments  
+
+We would like to thank:  
+
+- **Institution’s Innovation Council (IIC)** – for providing the opportunity to innovate and present our project.  
+- **Our Mentors and Faculty** – for continuous support, guidance, and valuable feedback.  
+- **Open-Source Community** – for contributing libraries like YOLOv8, OpenCV, and TensorFlow, which made this project possible.  
+
+> 🚀 *Together, we aim to make road safety smarter and more efficient through AI.*
+
+---
 
 
-📜 License
-
-Licensed under the MIT License. See LICENSE
- for details.
-
-🙏 Acknowledgments
-
-Special thanks to our mentors and the Institution’s Innovation Council (IIC) for guidance and support.
