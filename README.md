@@ -74,3 +74,21 @@ python detect.py --source 0
 
 # Run detection on video file
 python detect.py --source /path/to/video.mp4
+
+👥 Team
+
+Durgesh Sharma – Backend / AI Developer
+
+Suryansh Seth – Backend & Team lead
+
+Ujjwal Kansal – UI/UX & Documentation
+
+
+📜 License
+
+Licensed under the MIT License. See LICENSE
+ for details.
+
+🙏 Acknowledgments
+
+Special thanks to our mentors and the Institution’s Innovation Council (IIC) for guidance and support.
