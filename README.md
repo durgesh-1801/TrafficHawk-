@@ -74,8 +74,9 @@ pip install -r requirements.txt
 # Run detection on webcam
 python detect.py --source 0
 
-# Run detection on video file
-python detect.py --source /path/to/video.mp4
+## 🎥 Project Demo
+
+[![Watch Demo](https://img.shields.io/badge/▶️%20Watch%20Demo%20on%20Drive-blue?style=for-the-badge)](https://drive.google.com/file/d/1gKNJDTqP95fHPN80k970EFUkTRPlA_u_/view?usp=sharing)
 
 ---
 
