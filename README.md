@@ -76,7 +76,7 @@ python detect.py --source 0
 
 ## 🎥 Source Video
 
-[Soure Video] (https://drive.google.com/file/d/1gKNJDTqP95fHPN80k970EFUkTRPlA_u_/view?usp=sharing)
+[Soure Video](https://drive.google.com/file/d/1gKNJDTqP95fHPN80k970EFUkTRPlA_u_/view?usp=sharing)
 
 ---
 
